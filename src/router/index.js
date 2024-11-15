@@ -42,6 +42,11 @@ const router = createRouter({
       name: 'binding',
       component: () => import('../views/BindingView.vue'),
     },
+    {
+      path: '/condition',
+      name: 'condition',
+      component: () => import('../views/ConditionView.vue'),
+    },
   ],
 })
 

@@ -14,7 +14,8 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
         <RouterLink to="/template">기초문법</RouterLink>
-        <RouterLink to="/reactivity">Reactivity 기초</RouterLink>
+        <RouterLink to="/ref">상태관리(ref)</RouterLink>
+        <RouterLink to="/reactivity">상태관리(reactive)</RouterLink>
       </nav>
     </div>
   </header>

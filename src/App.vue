@@ -16,6 +16,7 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/template">기초문법</RouterLink>
         <RouterLink to="/ref">상태관리(ref)</RouterLink>
         <RouterLink to="/reactivity">상태관리(reactive)</RouterLink>
+        <RouterLink to="/computed">계산된 속성</RouterLink>
       </nav>
     </div>
   </header>

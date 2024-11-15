@@ -37,6 +37,11 @@ const router = createRouter({
       name: 'computed',
       component: () => import('../views/ComputedView.vue'),
     },
+    {
+      path: '/binding',
+      name: 'binding',
+      component: () => import('../views/BindingView.vue'),
+    },
   ],
 })
 

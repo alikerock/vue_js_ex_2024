@@ -23,6 +23,11 @@ const router = createRouter({
       component: () => import('../views/TempView.vue'),
     },
     {
+      path: '/ref',
+      name: 'ref',
+      component: () => import('../views/RefView.vue'),
+    },
+    {
       path: '/reactivity',
       name: 'reactivity',
       component: () => import('../views/ReactivityView.vue'),

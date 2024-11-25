@@ -19,6 +19,7 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/computed">계산된 속성</RouterLink>
         <RouterLink to="/binding">클래스와 스타일 바인딩</RouterLink>
         <RouterLink to="/condition">조건부 렌더링</RouterLink>
+        <RouterLink to="/list_render">리스트 렌더링</RouterLink>
       </nav>
     </div>
   </header>

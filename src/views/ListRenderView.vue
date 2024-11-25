@@ -1,5 +1,5 @@
 <script setup>
-import { ref } from 'vue';
+import { ref,computed } from 'vue';
 const langs = ref(
   [
     {
@@ -18,7 +18,10 @@ const langs = ref(
     }      
   ]
 );
-
+const numbers = ref([1,2,3,4,5]);
+const evenNumber= computed(()=>
+   numbers.value.filter(num=> num%2 === 0)
+);
 </script>
 <template>
   <div class="content">
@@ -39,6 +42,16 @@ const langs = ref(
           </ul>
       </li>
     </ul>
+    <hr>
+    <span v-for="num in 10" :key="num.id">{{ num }}</span>
+    <hr>
+    <ul>
+      <template v-for="(item) in langs" :key="item.id">
+        <li>{{ item.parentLangs }}</li>
+      </template>
+    </ul>
+    <h2>배열 교체</h2>
+    {{ evenNumber }}
   </div> 
 </template>
 

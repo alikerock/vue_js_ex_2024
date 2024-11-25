@@ -28,6 +28,17 @@ const langs = ref(
         {{  item }} -  {{  value }} -    {{  idx }}
       </li>
     </ul>
+    <hr>
+    <ul>
+      <li v-for="(item, idx) in langs" :key="idx">
+          {{  item.parentLangs }}
+          <ul>
+            <li v-for="(item, value, idx) in item.items" :key="idx">
+              {{  value }}번째 {{  item.lang }}
+            </li>
+          </ul>
+      </li>
+    </ul>
   </div> 
 </template>
 

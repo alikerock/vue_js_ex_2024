@@ -24,6 +24,7 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/form_bind">Form 입력 바인딩</RouterLink>
         <RouterLink to="/lifecycle">생명주기 훅</RouterLink>
         <RouterLink to="/watch">감시자</RouterLink>
+        <RouterLink to="/component">컴포넌트</RouterLink>
       </nav>
     </div>
   </header>

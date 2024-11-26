@@ -6,7 +6,7 @@ const answer = ref('질문에는 보통 물음표가 포함됩니다. ;-)')
 const loading = ref(false)
 const answerImg = ref('');
 
-watch(question, async(newQestion, oldQuestion)=>{
+watch(question, async(newQestion)=>{
   if(newQestion.includes('?')){
     loading.value=true;
     answer.value = '생각중...';

@@ -5,7 +5,7 @@ import HelloWorld from './components/HelloWorld.vue'
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+    
 
     <div class="wrapper">
       <HelloWorld msg="Hello" msg2="Vue!"/>
@@ -22,6 +22,8 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/list_render">리스트 렌더링</RouterLink>
         <RouterLink to="/event">event 핸들링</RouterLink>
         <RouterLink to="/form_bind">Form 입력 바인딩</RouterLink>
+        <RouterLink to="/lifecycle">생명주기 훅</RouterLink>
+        <RouterLink to="/watch">감시자</RouterLink>
       </nav>
     </div>
   </header>

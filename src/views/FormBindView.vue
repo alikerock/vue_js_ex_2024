@@ -8,6 +8,13 @@ const checked = ref(false);
 const names = ref([]);
 const food = ref('짜장');
 
+const selected = ref(1);
+const options = ref([
+  {text:'하나', value:1},
+  {text:'둘', value:2},
+  {text:'셋', value:3}
+]);
+
 
 </script>
 
@@ -40,7 +47,11 @@ const food = ref('짜장');
 
     <input type="radio" id="jjambong" value="짬봉" v-model="food">
     <label for="jjambong">짬봉</label> 
-
+    <hr>
+    <select name="" id="" v-model="selected">
+      <option  v-for="option in options" :value="option.value" :key="option.id">{{ option.text }}</option>
+    </select>
+    <p>{{ selected }}</p>
   </div>
 </template>
 

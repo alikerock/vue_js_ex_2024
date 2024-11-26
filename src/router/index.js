@@ -62,6 +62,16 @@ const router = createRouter({
       name: 'form_bind',
       component: () => import('../views/FormBindView.vue'),
     },    
+    {
+      path: '/lifecycle',
+      name: 'lifecycle',
+      component: () => import('../views/LifeCycleView.vue'),
+    },    
+    {
+      path: '/watch',
+      name: 'watch',
+      component: () => import('../views/WatchView.vue'),
+    },    
   ],
 })
 

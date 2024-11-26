@@ -21,6 +21,7 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/condition">조건부 렌더링</RouterLink>
         <RouterLink to="/list_render">리스트 렌더링</RouterLink>
         <RouterLink to="/event">event 핸들링</RouterLink>
+        <RouterLink to="/form_bind">Form 입력 바인딩</RouterLink>
       </nav>
     </div>
   </header>

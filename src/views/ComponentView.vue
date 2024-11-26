@@ -25,6 +25,7 @@ const fontsize = ref(1);
         :key="post.id" 
         :title="post.title"
         @enlarge-text="fontsize+=0.1"
+        @smaller-text="fontsize-=0.1"
       />
     </div>
   </div>

@@ -5,12 +5,14 @@
       required: true,
     }
   })
-  defineEmits(['enlarge-text'])
+  defineEmits(['enlarge-text'],['smaller-text'] )
+
 </script>
 <template>
   <div class="content">
    <h3>{{title}}</h3>
    <button @click="$emit('enlarge-text')">텍스트 확대</button>
+   <button @click="$emit('smaller-text')">텍스트 축소</button>
   </div>
 </template>
 

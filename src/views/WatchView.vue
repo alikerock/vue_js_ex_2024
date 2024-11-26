@@ -12,7 +12,7 @@ watch(question, async(newQestion, oldQuestion)=>{
       const res = await fetch('https://yesno.wtf/api')
       answer.value =  (await res.json()).answer === 'yes' ?'네':'아니오'
     } catch (error){
-        this.answer =  '에러!' +error
+      answer.value =  '에러!' +error
     }
   }
 })

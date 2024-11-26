@@ -11,10 +11,10 @@ const posts = ref([
   {id:2, title:'title2'},
   {id:3, title:'title3'}
 ])
-
-const tabs = {tab1,tab2,tab3};
+const tabsTitle = ref(['tab1','tab2','tab3']);
+const tabsCP = ref([tab1,tab2,tab3]);
 const fontsize = ref(1);
-const currentTab = ref('tab1');
+const currentTab = ref(tabsCP.value[0]);
 
 </script>
 <template>
@@ -37,11 +37,11 @@ const currentTab = ref('tab1');
     <hr>
     <h2>tab</h2>
     <button 
-      v-for="(_, tab) in tabs" 
-      :key="tab"
-      @click = "currentTab = tab"
-    >{{ tab }}</button>
-    <component :is="tabs[currentTab]"/>
+      v-for="(title, idx) in tabsTitle" 
+      :key="idx"
+      @click = "currentTab = tabsCP.value[idx]; console.log(idx)"
+    >{{ title }}</button>
+    <component :is="currentTab"/>
     
   </div>
 </template>

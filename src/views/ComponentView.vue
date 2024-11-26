@@ -15,6 +15,18 @@ const posts = ref([
 const tabs = {tab1,tab2,tab3};
 const fontsize = ref(1);
 const currentTab = ref('tab1');
+const arr = ['a','b','c'];
+arr.forEach((m1,m2,m3)=>{
+  console.log(m1,m2,m3);
+})
+
+const arrOjb = {a:1,b:2,c:3}
+for(let arr in arrOjb){
+  console.log(arr, arrOjb[arr]);
+}
+Object.entries(arrOjb).forEach(([key,value],idx)=>{
+  console.log(key, value, idx);
+})
 
 </script>
 <template>
